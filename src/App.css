@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'DSEG14-Classic';
+  src: url('https://cdn.jsdelivr.net/npm/dseg@0.43.0/fonts/DSEG14-Classic/DSEG14Classic-Regular.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/npm/dseg@0.43.0/fonts/DSEG14-Classic/DSEG14Classic-Regular.woff') format('woff'),
+  url('https://cdn.jsdelivr.net/npm/dseg@0.43.0/fonts/DSEG14-Classic/DSEG14Classic-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper_app{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(111, 44, 173, 0.3);
+}
+
+.calculator{
+  width: 340px;
+  height: 400px;
+  padding: 3px;
+  border: 2px solid rgb(88, 88, 88);
+  background-color: black;
+}
+
+.display{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.display .answer ,.display .expression{
+  height: 20px;
+  font-family:'DSEG14-Classic';
+  font-size: 1em;
+  text-align: right;
+}
+
+.display .answer{
+  color: white;
+}
+
+.display .expression{
+  margin-top: 10px;
+  color: rgb(255, 174, 0);
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.buttons_panel{
+  width: 330px;
+  height: 330px;
+  padding: 5px;
+}
+
+button {
+  height: 65px;
+  width: 80px;
+  color: white;
+  outline: 1px solid black;
+  border: none;
+  background: #4d4d4d;
+  font-family: Share Tech Mono, monospace;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover{
+  color: black;
+}
+
+.doubleWidth{
+  width: 160px;
+}
+
+.doubleHeight{
+  background: rgb(0, 68, 102);
+  position: absolute;
+  height: 130px;
+}
+.symbol{
+  background-color: #636363;
+}
